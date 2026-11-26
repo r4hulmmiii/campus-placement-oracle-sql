@@ -27,3 +27,15 @@ Execute the SQL scripts sequentially in **Oracle SQL\*Plus** or **Oracle SQL Dev
 @01_schema_ddl.sql
 @02_seed_data_dml.sql
 @03_analytical_queries.sql
+```
+
+### 2. Run the Python CLI Integration (Optional)
+1. Install the Oracle Python driver:
+   ```bash
+   pip install oracledb
+   ```
+2. Update `DB_USER`, `DB_PASSWORD`, and `DB_DSN` inside `ds_with_dbms.py`.
+3. Run the application:
+   ```bash
+   python ds_with_dbms.py
+   ```
